@@ -238,5 +238,16 @@ public class SpringbootApplication {
 
 </project>
 
-
+server:
+  port: 8080
+redisson:
+  address: redis://127.0.0.1:6379
+spring:
+  redis:
+    lettuce:
+      pool:
+        max-active: 8 #最大活跃
+        max-wait: -1ms #最大等待
+        max-idle: 500 #最大空闲
+        min-idle: 0 #最小空闲
 
